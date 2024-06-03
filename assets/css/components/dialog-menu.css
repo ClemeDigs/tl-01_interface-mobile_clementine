@@ -1,0 +1,61 @@
+.dialog {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.dialog[open]{
+    animation: fadeIn 0.5s forwards;
+    display: flex;
+}
+
+.dialog[closing]{
+    animation: fadeOut 0.5s forwards;
+}
+
+
+/*-------------NAV MODALE-------------*/
+
+.nav-modale {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: min(400px, 70%);
+    background-color: white;
+    color: black;
+    padding: 1rem;
+}
+
+.nav-modale nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-modale nav ul li {
+    transition: all 0.3s;
+}
+
+.btn__container {
+    width: min(400px, 70%);
+    padding: 1rem;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dialog[open] .nav-modale {
+    animation: slideInLeft 0.5s forwards;
+}
+
+.dialog[closing] .nav-modale {
+    animation: slideOutLeft 0.5s forwards;
+}

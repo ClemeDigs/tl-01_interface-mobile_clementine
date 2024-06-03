@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./assets/img/Logo-Clementine.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <script src="./assets/js/articles.js" defer></script>
+    <script src="./assets/js/dialog.js" defer></script>
+    <script src="./assets/js/search.js" defer></script>
+    <script src="./assets/js/toggleview.js" defer></script>
+    <title>Un Zeste de Clémentine</title>
+</head>
+<body>
+    <header>
+        <div class="bar">
+            <p>Livraison gratuite à partir de 75$ dans la région de Québec</p>
+        </div>
+        <div class="header-sans-bar">
+            <div class="logo-nav">
+                <div class="titre-logo">
+                    <img class="logo" src="./assets/img/logo.jpg" alt="Logo un zeste de clémentine">
+                    <h1>Un Zeste de Clémentine</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>Pâtisseries</li>
+                        <li>Chocolats</li>
+                        <li>Confiseries</li>
+                        <li>À propos</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div__input">
+                <div class="input-icon">
+                    <span class="material-symbols-outlined loupe">
+                    search
+                    </span>
+                    <input class="search" type="text">
+                </div>
+                <p class="span-articles">
+                    <span class="nb-articles">9</span>
+                    <span>article(s)</span>
+                </p>
+            </div>
+            <div class="icones">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+                <button class="btn__menu btn-trigger" data-dialog="#menu-mobile">
+                    <span class="material-symbols-outlined menu">
+                    menu
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div id="menu-mobile" class="dialog hidden" aria-role="dialog">
+            <div class="btn__container">
+                <button data-dialog="#menu-mobile" class="btn-close btn-trigger">X</button>
+            </div>
+            <div class="nav-modale">
+                <nav >
+                    <ul>
+                        <li>Pâtisseries</li>
+                        <li>Chocolats</li>
+                        <li>Confiseries</li>
+                        <li>À propos</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="banner__left">
+                <div class="banner__content">
+                    <h2>Découvrez nos produits</h2>
+                    <span>Découvrez les délices irrésistibles d'Un Zeste de Clémentine, votre nouvelle pâtisserie-biscuiterie de quartier ! Nos créations artisanales, élaborées avec passion et des ingrédients de première qualité, vous invitent à un voyage gustatif unique. De nos biscuits croquants et parfumés à nos pâtisseries raffinées, chaque bouchée est une promesse de bonheur.</span>
+                    <button class="btn__primary">Découvrir</button>
+                </div>
+            </div>
+            <div class="banner__right">
+                <picture class="img__banner">
+                    <source media="(min-width: 768px)" srcset="./assets/img/vecteezy_sandwich-biscuits-ai-genrative_27292691.png">
+                    <img class="img__banner" src="./assets/img/img-banner-mobile.png" alt="Photo des nouveaux biscuits">
+                </picture>
+            </div>
+        </div>
+
+        <section class="articles">
+            
+        </section>
+    </main>
+    <footer>
+        <p>Clémentine Digout</p>
+        <p><time datetime="2024-06-02">Juin 2024</time></p>
+        <p>Interface mobile</p>
+    </footer>
+</body>
+</html>

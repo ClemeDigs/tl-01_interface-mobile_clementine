@@ -1,0 +1,38 @@
+button {
+    background-color: rgba(255, 162, 0, 0.0);
+    color:  rgb(0, 0, 0);
+    font-size: 1.2rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 16px;
+    width: fit-content;
+    height: fit-content;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn__primary {
+    background-color: var(--orangealpha);
+}
+
+button:hover, button:focus {
+    box-shadow: var(--boxshadow);
+}
+
+.btn__menu {
+    border: none;
+    padding: 0;
+}
+
+.btn__menu:hover, .btn__menu:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.btn-toggle-view {
+    font-weight: 400;
+    font-size: 1rem;
+    border: 1px solid black;
+    padding: 0.6rem 1rem;
+}
