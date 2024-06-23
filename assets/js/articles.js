@@ -176,6 +176,8 @@ articlesFichesHtml.classList.add('articles__fiches');
 articlesSectionHtml.appendChild(articlesFichesHtml);
 
 
+/** Petit detail, j'aurais prefere que cette function soit declarer dans ta class Article */
+
 /** 
  * Convertit un article en élément HTML.
  * @param {Article} article
